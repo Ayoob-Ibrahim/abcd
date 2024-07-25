@@ -1,0 +1,23 @@
+<div dir="ltr">
+    <!-- [@sliderleft]="getAnimationState('left')"            [@slideright]="getAnimationState('right')" -->
+    <div [ngSwitch]="viewMode">
+        <div class="sliders-animations" *ngSwitchCase="'slidder_widget'" [@slideright]="getAnimationState('right')">
+            <app-widget-list [widgetlist]="[1,2,3,4,5,6,7,8,9]" widgetType="slidder_widget"></app-widget-list>
+        </div>
+        <div *ngSwitchCase="'card_icon_widget'" class="sliders-animations" [@slideright]="getAnimationState('right')">
+            <app-widget-list [widgetlist]="widgets_overview" widgetType="card_icon_widget"></app-widget-list>
+        </div>
+        <div *ngSwitchCase="'widget_card_rounded_corner'" class="sliders-animations"
+            [@slideright]="getAnimationState('right')">
+            <app-widget-list [widgetlist]="[1,2,3]" widgetType="widget_card_rounded_corner"></app-widget-list>
+        </div>
+    </div>
+</div>
+<div>
+    <div class="btn-container" [style]="direction=='en' ? 'right: 0%' : 'right: 20%;'">
+        <!-- <button (click)="TemplateViewChanger(-1,'left')" type="button" class="arrow-btn"><i
+                class="bi bi-arrow-left"></i></button> -->
+        <button (click)="TemplateViewChanger(+1,'right')" type="button" class="arrow-btn"><i
+                class="bi bi-arrow-right"></i></button>
+    </div>
+</div>

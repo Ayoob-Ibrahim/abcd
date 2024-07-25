@@ -1,0 +1,22 @@
+$bodywidth: 79.5vw;
+
+.body-content {
+    header {
+        height: 8vh;
+        width: $bodywidth;
+    }
+
+    section {
+        height: 77vh;
+        width: $bodywidth;
+    }
+
+    footer {
+        height: 8vh;
+        width: $bodywidth;
+    }
+    overflow: hidden ;
+}
+
+
+ 

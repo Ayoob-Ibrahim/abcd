@@ -1,0 +1,9 @@
+<!-- <jqxTreeGrid #treeGridReference [source]="treeGridData" [columns]="treeGridColumns"
+    (onBindingComplete)='onTreeGridRendered.emit()'>
+</jqxTreeGrid> -->
+<div class="grid-tree-abcd">
+    <jqxTreeGrid [theme]="'material'" [source]="dataAdapter" [altRows]="true" [sortable]="true" [width]="'100%'" [height]="'100%'"
+  [hierarchicalCheckboxes]="false" [width]="getWidth()" [checkboxes]="true" [columns]="columns"
+        [ready]="ready" #treeGridReference>
+    </jqxTreeGrid>
+</div>

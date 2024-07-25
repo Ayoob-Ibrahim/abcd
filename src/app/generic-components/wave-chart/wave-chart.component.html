@@ -1,0 +1,12 @@
+<ng-container *ngTemplateOutlet="wave_chart"></ng-container>
+
+<ng-template #wave_chart>
+  <section class="chart_wave">
+    <h6>Wave Chart</h6>
+    <div id="chart_wave">
+      <apx-chart [series]="chartOptions.series" [chart]="chartOptions.chart" [xaxis]="chartOptions.xaxis"
+        [stroke]="chartOptions.stroke" [tooltip]="chartOptions.tooltip"
+        [dataLabels]="chartOptions.dataLabels"></apx-chart>
+    </div>
+  </section>
+</ng-template>

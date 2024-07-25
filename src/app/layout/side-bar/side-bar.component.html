@@ -1,0 +1,18 @@
+<div class="wrapper">
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h1>Angular 17</h1>
+        </div>
+
+        <ul class="list-unstyled components">
+            <ng-container *ngFor="let data of menuList">
+                <li>
+                    <a [routerLink]="data.url" routerLinkActive="active" class="ms-4 me-4 mt-3 ">
+                        <i [ngClass]="data.icon" class="mx-1"></i>
+                        {{data.name |translate}}
+                    </a>
+                </li>
+            </ng-container>
+        </ul>
+    </nav>
+</div>

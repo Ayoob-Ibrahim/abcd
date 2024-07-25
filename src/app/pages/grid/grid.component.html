@@ -1,0 +1,20 @@
+<!-- <app-abcd-grid [GridInfo]="GridInfo.fullgrid" [whereCondition]="'action_grid_wr'"></app-abcd-grid> -->
+
+<!-- <app-dc-component [whereCondition]="action_grid_wr" (abcd_data_emit)="abcd_data_emit($event)"
+[GridInfo]="GridInfo.fullgrid" [loader]="true">
+</app-dc-component> -->
+
+<div class="card">
+    <div class="card-header">
+        <div>GRID COMPONENT</div>
+        <div class="combo">
+            <jqxComboBox [width]="250" [height]="'30px'" [source]="comboboxdata" #comboBoxReference placeHolder="choose themes"
+                (onChange)='themeselect($event.args.item.originalItem)'>
+            </jqxComboBox>
+        </div>
+
+    </div>
+    <div class="card-body">
+        <app-abcd-grid [GridInfo]="GridInfo.fullgrid" [whereCondition]="'action_grid_wr'" [themes]="abcd_grid_theme"></app-abcd-grid>
+    </div>
+</div>

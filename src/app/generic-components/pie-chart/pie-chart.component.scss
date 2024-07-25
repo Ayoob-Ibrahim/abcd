@@ -1,0 +1,19 @@
+.pie_chart {
+    padding: 50px;
+    border: 1px solid #494ca2;
+    border-radius: .3rem;
+    margin: 50px;
+    height: 75vh;
+
+    #chart {
+        max-width: 500px;
+        margin: 35px auto;
+        padding: 0;
+        width: 500px;
+        margin-left: 50px;
+    }
+
+    h6 {
+        color: #494ca2;
+    }
+}

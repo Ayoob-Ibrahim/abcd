@@ -1,0 +1,109 @@
+@switch (widgetType) {
+@case ("slidder_widget") {
+<ng-container *ngTemplateOutlet="slidder_widget; context: { valueToPass: widgetlist    }"></ng-container>
+}
+@case ("card_icon_widget") {
+<ng-container *ngTemplateOutlet="card_icon_widget; context: { valueToPass: widgetlist    }"></ng-container>
+}
+@case ("widget_card_rounded_corner") {
+<ng-container *ngTemplateOutlet="widget_card_rounded_corner; context: { valueToPass: widgetlist    }"></ng-container>
+}
+}
+
+
+<ng-template #widget_card_rounded_corner let-data4widget="valueToPass">
+    <ng-container *ngFor="let data of data4widget">
+        <ng-container *ngTemplateOutlet="card_rounded_corner"></ng-container>
+    </ng-container>
+</ng-template>
+
+
+<ng-template #card_rounded_corner>
+    <div class="container-card-corner-rounder">
+        <a class="card1">
+            <h3>Hover Color</h3>
+            <p class="small">Color of the entire card will be chnaged while doing a hover</p>
+            <div class="go-corner">
+                <div class="go-arrow">
+                    →
+                </div>
+            </div>
+        </a>
+
+        <a class="card2">
+            <h3>Hover Zoom</h3>
+            <p class="small">Card Details will be zoomed while doing a hover</p>
+
+            <div class="go-corner">
+                <div class="go-arrow">
+                    →
+                </div>
+            </div>
+        </a>
+
+        <a class="card3">
+            <h3>Hover Blur</h3>
+            <p class="small">All other details will be blured while doingg  a hover</p>
+            <div class="dimmer"></div>
+            <div class="go-corner">
+                <div class="go-arrow">
+                    →
+                </div>
+            </div>
+        </a>
+    </div>
+</ng-template>
+
+
+
+
+
+
+
+<!-- card_icon_widget -->
+<ng-template #card_icon_widget let-data4widget="valueToPass">
+    <div class="row container-row-card-icon-widget">
+        <ng-container *ngFor="let data of data4widget">
+            <div class="col-4">
+                <ng-container
+                    *ngTemplateOutlet="card_icon_widget_card_data;context: { valueToPass: data    }"></ng-container>
+            </div>
+        </ng-container>
+    </div>
+</ng-template>
+<ng-template #card_icon_widget_card_data let-item="valueToPass">
+    <div class="card-over-view">
+        <div class="card">
+            <h6>{{item.name}}</h6>
+            <p> {{item.count}} </p>
+            <div>
+                <span class="dot">
+                    <i [ngClass]="item.icon"> </i>
+                </span>
+            </div>
+        </div>
+    </div>
+</ng-template>
+<!-- card_icon_widget -->
+
+<!-- slidder widget -->
+<ng-template let-data4widget="valueToPass" #slidder_widget>
+    <div class="row container-row-card-slidder">
+        <ng-container *ngFor="let data of data4widget">
+            <div class="col-4">
+                <ng-container *ngTemplateOutlet="slidder_widget_card; context: { valueToPass: 
+                {
+        name:'widget '+data,
+        description:'Describe something or someone'
+} }"></ng-container>
+            </div>
+        </ng-container>
+    </div>
+</ng-template>
+<ng-template #slidder_widget_card let-item="valueToPass">
+    <div class="card_ card">
+        <h6 class="card-title">{{item.name}}</h6>
+        <p class="card-subtitle  text-muted">{{item.description}}</p>
+    </div>
+</ng-template>
+<!-- slidder widget -->

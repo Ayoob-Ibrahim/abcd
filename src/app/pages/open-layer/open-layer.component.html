@@ -1,0 +1,29 @@
+<div>
+    <form [formGroup]="profileform" (ngSubmit)="onSubmit()">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." formControlName="firstName">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." formControlName="lastName">
+
+        <label for="uname">User Name</label>
+        <input type="text" id="uname" name="username" placeholder="Your user name.." formControlName="username">
+
+        <label for="country">Country</label>
+        <select id="country" name="country" formControlName="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+        </select>
+        <div formArrayName="skills">
+            <label for="skills">Skills</label>
+            <input type="text" name="" id=""
+                *ngFor="let skill of profileform.get('skills')['controls']    ; let i=index">
+            <button (click)="addskills()">Add Skills</button>
+        </div>
+       
+
+        <input type="submit" value="Submit">
+
+    </form>
+</div>

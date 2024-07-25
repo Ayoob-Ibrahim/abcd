@@ -1,0 +1,44 @@
+ @import "bootstrap-icons/font/bootstrap-icons.css";
+ @import "jqwidgets-ng/jqwidgets/styles/jqx.dark.css";
+ @import "jqwidgets-ng/jqwidgets/styles/jqx.base.css";
+ @import "jqwidgets-ng/jqwidgets/styles/jqx.dark.css";
+ @import "jqwidgets-ng/jqwidgets/styles/jqx.blackberry.css";
+ @import "jqwidgets-ng/jqwidgets/styles/jqx.energyblue.css";
+ @import "jqwidgets-ng/jqwidgets/styles/jqx.classic.css";
+ @import "jqwidgets-ng/jqwidgets/styles/jqx.orange.css";
+ @import "jqwidgets-ng/jqwidgets/styles/jqx.office.css";
+ @import"app/theme/custom-scheme.css";
+
+ .btn-popup {
+     background-color: #494ca2;
+     width: 100px;
+     margin: 0px 15px 0px 15px;
+     border-radius: .3rem;
+     font-weight: 500;
+     color: white;
+ }
+
+ .btn-popup:hover {
+     background-color: white;
+     color: #494ca2;
+     transition: .3s ease;
+ }
+
+ .btn-popup.btn-cancel {
+     background-color: grey;
+     color: white;
+ }
+
+ .btn-popup.btn-cancel:hover {
+     color: grey;
+     background-color: white;
+ }
+
+ .btn-reload {
+     color: white;
+     background-color: orange;
+ }
+
+ div:where(.swal2-container) div:where(.swal2-popup) {
+     width: 30em;
+ }

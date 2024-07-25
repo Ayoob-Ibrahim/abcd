@@ -1,0 +1,30 @@
+<ng-container *ngTemplateOutlet="notification_list_with_bar"></ng-container>
+
+<ng-template #notification_list_with_bar>
+    <div style="display: flex;justify-content: center;align-items: center;height: 100%;">
+        <div class="content-top" dir="ltr">
+            <div>
+                <p class="font-['Monstrate'] pt-4 ps-4">{{'Notification'}}</p>
+            </div>
+            <div class="notification-card-container">
+                <ng-container *ngFor="let item of notifiction;let i =index;let total=count;let lastVal=last ">
+                    <div class="notification-card" style="position: relative;">
+                        <div>
+                            <span class="dot_"></span>
+                        </div>
+                        <ng-container *ngIf="lastVal; else notification_bar_line"> </ng-container>
+                        <div class="notification-card-scroll">
+                            {{ item }}
+                        </div>
+
+                    </div>
+                </ng-container>
+            </div>
+        </div>
+    </div>
+</ng-template>
+
+
+<ng-template #notification_bar_line>
+    <div class="vertical-line" [style]="false ?'right: 2.5%;': 'left: 0.55%'  "></div>
+</ng-template>

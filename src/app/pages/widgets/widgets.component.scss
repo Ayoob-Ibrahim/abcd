@@ -1,0 +1,27 @@
+div {
+    .btn-container {
+        margin-top: 4%;
+        position: absolute;
+        bottom: 0%;
+   
+       
+
+        .arrow-btn {
+            margin: 10px;
+            color: white;
+            background-color: #494ca2;
+            border-radius: .3rem;
+            padding: 3px 10px;
+            transition: .3s ease;
+
+            .bi {
+                font-weight: 500;
+            }
+        }
+
+        .arrow-btn:hover {
+            background-color: white;
+            color: #494ca2;
+        }
+    }
+}

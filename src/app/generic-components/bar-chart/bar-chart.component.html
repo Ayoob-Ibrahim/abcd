@@ -1,0 +1,14 @@
+<ng-container *ngTemplateOutlet="barchart"></ng-container>
+
+<ng-template #barchart>
+    <section class="bar_chart">
+        <h6>Dumbell Chart</h6>
+        <div id="chart_bar">
+            <apx-chart [series]="chartOptions.series" [chart]="chartOptions.chart" [stroke]="chartOptions.stroke"
+                [dataLabels]="chartOptions.dataLabels" [plotOptions]="chartOptions.plotOptions"
+                [xaxis]="chartOptions.xaxis" [colors]="chartOptions.colors" [fill]="chartOptions.fill"
+                [yaxis]="chartOptions.yaxis" [legend]="chartOptions.legend" [grid]="chartOptions.grid"
+                [title]="chartOptions.title"></apx-chart>
+        </div>
+    </section>
+</ng-template>

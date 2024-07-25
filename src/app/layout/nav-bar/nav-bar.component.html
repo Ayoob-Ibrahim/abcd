@@ -1,0 +1,17 @@
+ 
+<nav class="navbar navbar-light ">
+  <span class="navbar-brand mb-0 h1 ms-2">Ethical Intelligence Technology </span>
+  <div class="globe" [ngStyle]="direction()!='en' ?
+  {'margin-right': '61%'} : 
+  {'margin-left': '61%'}">
+    <ng-container *ngTemplateOutlet="langugae_selection"></ng-container>
+  </div>
+  <div class="mx-3" (click)="logout()">
+    <app-svg-icons svgicon="logout"></app-svg-icons>
+  </div>
+</nav>
+
+
+<ng-template #langugae_selection>
+  <i class="bi bi-globe" (click)="languagecontrol()"></i>
+</ng-template>

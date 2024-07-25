@@ -1,0 +1,14 @@
+<div style="display: flex;">
+    <app-side-bar></app-side-bar>
+    <div class="body-content">
+        <header>
+            <app-nav-bar></app-nav-bar>
+        </header>
+        <section [@routeAnimations]="getRouteAnimationData()">
+            <router-outlet #outlet="outlet" />
+        </section>
+        <footer>
+            <app-bottom-bar></app-bottom-bar>
+        </footer>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+{
+    "gridTable": "Grid Table",
+    "chartData": "Chart Data",
+    "openLayers": "Open Layers",
+    "notification": "Notification",
+    "logoutcontent1": "Are you sure you want to logout ?",
+    "logoutcontent2": "You will redirected to Log-in page",
+    "sessionExpired": "Session Expired",
+    "widgets":"Widgets",
+    "Tree Hierarchy":"Tree Hierarchy",
+    "sessionExpiredcontent": "Due to privacy concerns, your session has expired after 1 hour of inactivity. Please sign in or refresh to proceed."
+}

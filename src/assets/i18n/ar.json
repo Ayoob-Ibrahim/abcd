@@ -1,0 +1,12 @@
+{
+  "gridTable": "جدول الشبكة",
+  "chartData": "بيانات الرسم البياني",
+  "openLayers": "الطبقات المفتوحة",
+  "notification": "إشعار",
+  "logoutcontent1": "Are you sure you want to logout ?",
+  "logoutcontent2": "You will redirected to Log-in page",
+  "sessionExpired": "Session Expired",
+  "widgets":"الحاجيات",
+  "Tree Hierarchy":"التسلسل الهرمي للشجرة",
+  "sessionExpiredcontent": "Due to privacy concerns, your session has expired after 1 hour of inactivity. Please sign in or refresh to proceed."
+}
