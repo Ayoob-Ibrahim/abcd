@@ -1,0 +1,67 @@
+<div class="insepction-container">
+    <ng-container *ngTemplateOutlet="inspection_header"></ng-container>
+    <ng-container *ngTemplateOutlet="inspection_body"></ng-container>
+</div>
+
+<ng-template #inspection_header>
+    <header>
+        <div class="inspection-status-bar">
+            <div class="row">
+                <div class="col-3 cols-br">
+                    <img src="../../../assets/login/image.png" alt="">
+                </div>
+                <div class="col-6 cols-br" style="text-align: center;">
+                    <h2>Inspection</h2>
+                </div>
+                <div class="col-3 cols-br">
+                    <h3>
+                        SERIAL NUMBER:20244027202
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </header>
+</ng-template>
+
+
+<ng-template #inspection_body>
+    <div class="inspection-body-container">
+        <div class="width-30per">
+            <ng-container *ngTemplateOutlet="inspection_25"></ng-container>
+        </div>
+        <div class="width-70per">
+            <ng-container *ngTemplateOutlet="inspection_75"></ng-container>
+        </div>
+    </div>
+</ng-template>
+
+
+<ng-template #inspection_25>
+    <div class="label-content">
+        <h2 class="label-data">
+            Company:
+        </h2>
+    </div>
+    <div class="label-content">
+        <h2 class="label-data">
+            Inspected By:
+        </h2>
+    </div>
+    <div class="label-content">
+        <h2 class="label-data">
+            Issing Department:
+        </h2>
+    </div>
+    <div class="label-content">
+        <h2 class="label-data">
+            Date:
+        </h2>
+    </div>
+    <div class="label-content excessheight">
+        <h2 class="label-data">
+             location:
+        </h2>
+    </div>
+</ng-template>
+
+<ng-template #inspection_75></ng-template>

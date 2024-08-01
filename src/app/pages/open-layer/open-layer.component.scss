@@ -28,3 +28,10 @@ input[type=text], select {
     background-color: #f2f2f2;
     padding: 20px;
   }
+
+  .container{
+    height: 85vh;
+    overflow-y: auto;
+    scrollbar-color: grey;
+    scrollbar-width: thin;
+  }

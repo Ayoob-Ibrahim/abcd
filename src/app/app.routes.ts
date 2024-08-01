@@ -10,6 +10,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { CanActivate } from './guards/canActivate';
 import { WidgetsComponent } from './pages/widgets/widgets.component';
 import { TreeComponent } from './pages/tree/tree.component';
+import { InspectionComponent } from './pages/inspection/inspection.component';
 
 export const routes: Routes = [
 
@@ -23,7 +24,8 @@ export const routes: Routes = [
             { path: 'notification', component: NotificationComponent },
             { path: 'map', component: OpenLayerComponent },
             { path: 'widgets', component: WidgetsComponent },
-            { path: 'tree', component: TreeComponent }
+            { path: 'tree', component: TreeComponent },
+            { path: 'ins', component: InspectionComponent }
         ]
     },
     { path: '**', component: LoginComponent },

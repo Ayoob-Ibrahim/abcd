@@ -1,0 +1,90 @@
+$text-clr: #525f7f;
+$bg-clr: #d5e9f7;
+
+.insepction-container {
+
+    width: 79.5vw;
+    margin-top: 3%;
+
+    header {
+        border: 1px solid;
+
+        div.inspection-status-bar {
+            width: 100%;
+            height: 120px;
+            background-color: $bg-clr;
+
+            div.row {
+                height: 80px;
+
+                .cols-br {
+                    border: 1px solid;
+                    border-top: none;
+
+                    img {
+                        margin-left: 30%;
+                        margin-top: 3%;
+                    }
+                }
+
+                .cols-br h2 {
+                    text-transform: uppercase;
+                    color: $text-clr;
+                    font-size: 1.6rem;
+                    display: inline-block;
+                    margin-top: 4%;
+                }
+
+                .cols-br h3 {
+                    text-transform: uppercase;
+                    color: #525f7f;
+                    font-size: 1.11rem;
+                    display: inline-block;
+                    margin-top: 10%;
+                    display: inline-block;
+                    margin-left: 3%;
+                }
+            }
+        }
+    }
+}
+
+h2.label-data {
+    font-size: 500;
+    font-size: 1.1rem;
+    color: $text-clr;
+    margin-top: 3%;
+    display: inline-block;
+    text-align: center;
+    margin-left: 3%;
+}
+
+
+.insepction-container .inspection-body-container {
+    border: 1px solid;
+    margin-top: 3%;
+    height: 400px;
+    display: flex;
+
+    .width-30per {
+        width: 25%;
+        border: 2px solid red;
+        background-color: $bg-clr ;
+
+        .label-content {
+            height: 50px;
+            border-bottom: 1px solid;
+            text-align: left;
+        }
+
+
+        .label-content.excessheight {
+            height: 200px;
+        }
+    }
+
+    .width-70per {
+        width: 75%;
+        border: 2px solid red;
+    }
+}
